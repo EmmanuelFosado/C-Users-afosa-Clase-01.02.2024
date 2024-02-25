@@ -3,10 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Curriculum Emmanuel</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f39c12; /* Orange background */
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color:#e67e22; /* Carriot background */
+    color:#2c3e50;
+    padding: 1px;
+    margin: 1px;
+    position:relative;
+    top: 10px;
+}
+header img {
+    max-width: 180px;
+    border-radius: 20px;
+}
+header img.second-image {
+    max-width: 120px;
+    margin: 20px;
+    display: block; 
+}
+main {
+    padding: 1px;
+}
+.social-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #2c3e50;
+    background-color: #e67e22;
+    border-radius: 20px;
+    cursor: pointer;
+}
+   .Activities {
+        background-color: #e67e22;
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+        border: 2px dotted black;
+        box-sizing:border-box;
+        position: relative;
+        left: 550px;
+    }
+    .border-box{
+        background: #e67e22;
+    width: 300px;
+    height: 180px;
+    padding: 0px;
+    border: 2px dotted black;
+    box-sizing:initial;
+    position: relative;
+    left: 550px;
+}
+</style>
 </head>
 <body>
-    <h1>Formulario</h1>
-    
+    <header>
+        <img src="CV.png" width="200" height="200">
+        <h1>Emmanuel Aldana Fosado</h1>
+    </header>
+    <main>
+        <p>Economist/banker specialized in money laundering prevention at Financial Institutions. I am interested in several topics such as technology, history, literature and epistemology.</p>
+        <p1Z>Mexico City, Mexico.</p1Z>
+        <p2Z>Mail: aldanaemmanuel@gmail.com / Mobile: 5549072015 </p2Z>
+        <hr>
+        <p style="color: rgb(0, 0, 0); font-size: 24px;">Experience</p>
+        <p style="margin-top: 0%;margin-bottom: 0%; font-size: 20px;">Bilingual KYC Officer at Citi Mexico (Citigroup)</p>
+        <p style="margin-top: 0%;margin-bottom: 0%;">Full-time</p>
+        <p style="margin-top: 0%;margin-bottom: 0%;">September 2017 - Present</p>
+        <p>Mexico City-Hybrid Scheme</p>
+        <p style="margin-top: 0%; margin-bottom: 0%;">Investment Bank/Institutional Clients Group</p>
+        <p style="margin-top: 0%; margin-bottom: 0%;">KYC Program Implementation at Institutional Clients Group (Top Corporations, Financial Institutions and Governments). This implementation consist of:</h2>
+        <ul class="Activities"; style="text-align: left;text-decoration: underline">
+            <li> Transaction analysis</li>
+            <li>Investigation within the financial crimes</li>
+            <li>Investigation within AML, risk</li>
+            <li>Investigation within Threat analysis</li>
+            <li>Investigation within fraud fields</li>
+            </ul>
+            <br />
+        <p style="font-size: 24px;">Education</p>
+        <p style="margin-top: 0%;margin-bottom: 0%;">Universida Panamericana</p>
+        <P style="margin-top: 0%;margin-bottom: 0%;">Specialist in Engineering and Project Management</P>
+        <p style="margin-top: 0%;margin-bottom: 0%;">2016-2017</p>
+        <P>Capable of carrying out technical and human resource planning and of assuring the viability of projects by implementing efficient business </P>
+        <br />
+        <p style="font-size: 24px; text-align: center;">Hobbies and Interests</p>
+        <img src="Sea.png" width="150" height="150">
+        <div class="border-box">
+        <ul style="text-align: left;">
+            <li>Swimming</li>
+            <li>Literature</li>
+            <li>Metaphysics topics</li>
+            <li>Spiritual development</li>
+            <li>Technology topics</li>
+        </ul>
+    </div>
+        If you would like to know more about me, go to:
+        <a href="#" class="social-button" id="instagram-button">Instagram</a>
+        <a href="#" class="social-button" id="twitter-button">Twitter</a>
+    </main>
+    <script>
+        document.getElementById('instagram-button').addEventListener('click', function() {
+            window.location.href ='https://www.instagram.com/emmanuelaldana2/';
+        });
+
+        document.getElementById('twitter-button').addEventListener('click', function() {
+            window.location.href = 'https://twitter.com/GilgameshFosado/likes';
+        });
+    </script>
+    </script>
 </body>
 </html>
